@@ -1,0 +1,486 @@
+
+
+.game-loader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #130f40;
+    background-image: linear-gradient(150deg, #130f40 0%, #000000 74%);
+    /* #273355 */
+}
+
+
+.game-loader__planet {
+    filter: url('#goo');
+    position: relative;
+    width: 100vw;
+    height: 100vw;
+}
+.game-loader__planet::after {
+    content: '';
+    display: block;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background: linear-gradient(315deg, #ff4e00 0%, #c20114 74%);
+    box-shadow: linear-gradient(315deg, #ff4e00 0%, #c20114 74%) 0 0 24px 4px;
+    margin: 0 auto;
+    position: absolute;
+    top: 46vw;
+    left: 46vw;
+    animation: scale 16s linear infinite, color5 8s linear 1;
+}
+.game-loader__planet .loader-mini1 {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background: #c20114;
+    top: 48.5vw;
+    left: 48.5vw;
+    animation: move1 8s linear 1, color1 8s linear 1;
+}
+.game-loader__planet .loader-mini2 {
+    position: absolute;
+    width: 3.6vw;
+    height: 3.6vw;
+    border-radius: 50%;
+    background: #c20114;
+    top: 48.5vw;
+    left: 48.5vw;
+    animation: move2 9s linear 1, color2 9s linear 1;
+}
+.game-loader__planet .loader-mini3 {
+    position: absolute;
+    width: 4.2vw;
+    height: 4.2vw;
+    border-radius: 50%;
+    background: #c20114;
+    top: 48.5vw;
+    left: 48.5vw;
+    animation: move3 10s linear 1, color3 10s linear 1;
+}
+.game-loader__planet .loader-mini4 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    border-radius: 50%;
+    background: #c20114;
+    top: 48.5vw;
+    left: 48.5vw;
+    animation: move4 11s linear 1, color4 11s linear 1;
+}
+.game-loader__planet .loader-radius1 {
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    border: 0.5px solid #11dbd9;
+    opacity: 0.2;
+    background: transparent;
+    top: 44vw;
+    left: 44vw;
+    transform: scale(0);
+    animation: orbit1 8s linear 1;
+}
+.game-loader__planet .loader-radius2 {
+    position: absolute;
+    width: 18vw;
+    height: 18vw;
+    border-radius: 50%;
+    border: 0.5px solid #11dbd9;
+    opacity: 0.2;
+    background: transparent;
+    transform: scale(0);
+    top: 41vw;
+    left: 41vw;
+    animation: orbit2 9s linear 1;
+}
+.game-loader__planet .loader-radius3 {
+    position: absolute;
+    width: 24vw;
+    height: 24vw;
+    border-radius: 50%;
+    border: 0.5px solid #11dbd9;
+    opacity: 0.2;
+    background: transparent;
+    transform: scale(0);
+    top: 38vw;
+    left: 38vw;
+    animation: orbit3 10s linear 1;
+}
+.game-loader__planet .loader-radius4 {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    border: 0.5px solid #11dbd9;
+    opacity: 0.2;
+    background: transparent;
+    transform: scale(0);
+    top: 35vw;
+    left: 35vw;
+    animation: orbit4 11s linear 1;
+}
+.game-loader__planet--color .loader-mini1 {
+    background: #c20114;
+    
+}
+.game-loader__planet--color .loader-mini2 {
+    background: #c20114;
+}
+.game-loader__planet--color .loader-mini3 {
+    background: #c20114;
+}
+.game-loader__planet--color .loader-mini4 {
+    background: #c20114;
+}
+
+@keyframes move1 {
+    0% {
+        transform: skewX(5deg) rotate(0deg) translateY(0em) rotate(0deg) skewX(-5deg) rotate(0deg);
+   }
+    10% {
+        transform: skewX(5deg) rotate(180deg) translateY(-6vw) rotate(-180deg) skewX(-5deg) rotate(180deg);
+   }
+    25% {
+        transform: skewX(5deg) rotate(360deg) translateY(-12vw) rotate(-360deg) skewX(-5deg) rotate(360deg);
+   }
+    50% {
+        transform: skewX(5deg) rotate(720deg) translateY(-12vw) rotate(720deg) skewX(-5deg) rotate(720deg);
+   }
+    75% {
+        transform: skewX(5deg) rotate(1080deg) translateY(-12vw) rotate(-1080deg) skewX(-5deg) rotate(1080deg);
+   }
+    90% {
+        transform: skewX(5deg) rotate(1260deg) translateY(-6vw) rotate(-1260deg) skewX(-5deg) rotate(1260deg);
+   }
+    100% {
+        transform: skewX(5deg) rotate(1440deg) translateY(0em) rotate(-1440deg) skewX(-5deg) rotate(1440deg);
+   }
+}
+@keyframes move2 {
+    0% {
+        transform: skewX(5deg) rotate(0deg) translateY(0em) rotate(0deg) skewX(-5deg) rotate(0deg);
+   }
+    10% {
+        transform: skewX(5deg) rotate(180deg) translateY(-9vw) rotate(-180deg) skewX(-5deg) rotate(180deg);
+   }
+    25% {
+        transform: skewX(5deg) rotate(360deg) translateY(-18vw) rotate(-360deg) skewX(-5deg) rotate(360deg);
+   }
+    50% {
+        transform: skewX(5deg) rotate(720deg) translateY(-18vw) rotate(720deg) skewX(-5deg) rotate(720deg);
+   }
+    75% {
+        transform: skewX(5deg) rotate(1080deg) translateY(-18vw) rotate(-1080deg) skewX(-5deg) rotate(1080deg);
+   }
+    90% {
+        transform: skewX(5deg) rotate(1260deg) translateY(-9vw) rotate(-1260deg) skewX(-5deg) rotate(1260deg);
+   }
+    100% {
+        transform: skewX(5deg) rotate(1440deg) translateY(0em) rotate(-1440deg) skewX(-5deg) rotate(1440deg);
+   }
+}
+@keyframes move3 {
+    0% {
+        transform: skewX(5deg) rotate(0deg) translateY(0em) rotate(0deg) skewX(-5deg) rotate(0deg);
+   }
+    10% {
+        transform: skewX(5deg) rotate(180deg) translateY(-12vw) rotate(-180deg) skewX(-5deg) rotate(180deg);
+   }
+    25% {
+        transform: skewX(5deg) rotate(360deg) translateY(-24vw) rotate(-360deg) skewX(-5deg) rotate(360deg);
+   }
+    50% {
+        transform: skewX(5deg) rotate(720deg) translateY(-24vw) rotate(720deg) skewX(-5deg) rotate(720deg);
+   }
+    75% {
+        transform: skewX(5deg) rotate(1080deg) translateY(-24vw) rotate(-1080deg) skewX(-5deg) rotate(1080deg);
+   }
+    90% {
+        transform: skewX(5deg) rotate(1260deg) translateY(-12vw) rotate(-1260deg) skewX(-5deg) rotate(1260deg);
+   }
+    100% {
+        transform: skewX(5deg) rotate(1440deg) translateY(0em) rotate(-1440deg) skewX(-5deg) rotate(1440deg);
+   }
+}
+@keyframes move4 {
+    0% {
+        transform: skewX(5deg) rotate(0deg) translateY(0em) rotate(0deg) skewX(-5deg) rotate(0deg);
+   }
+    10% {
+        transform: skewX(5deg) rotate(180deg) translateY(-15vw) rotate(-180deg) skewX(-5deg) rotate(180deg);
+   }
+    25% {
+        transform: skewX(5deg) rotate(360deg) translateY(-30vw) rotate(-360deg) skewX(-5deg) rotate(360deg);
+   }
+    50% {
+        transform: skewX(5deg) rotate(720deg) translateY(-30vw) rotate(720deg) skewX(-5deg) rotate(720deg);
+   }
+    75% {
+        transform: skewX(5deg) rotate(1080deg) translateY(-30vw) rotate(-1080deg) skewX(-5deg) rotate(1080deg);
+   }
+    90% {
+        transform: skewX(5deg) rotate(1260deg) translateY(-15vw) rotate(-1260deg) skewX(-5deg) rotate(1260deg);
+   }
+    100% {
+        transform: skewX(5deg) rotate(1440deg) translateY(0em) rotate(-1440deg) skewX(-5deg) rotate(1440deg);
+   }
+}
+@keyframes scale {
+    0% {
+        transform: scale(1.5);
+   }
+    50% {
+        transform: scale(1);
+   }
+    100% {
+        transform: scale(1.5);
+   }
+}
+@keyframes orbit1 {
+    0% {
+        transform: scale(0);
+   }
+    10% {
+        transform: scale(1);
+   }
+    25% {
+        transform: scale(2.2);
+   }
+    35% {
+        transform: scale(2.1);
+   }
+    50% {
+        transform: scale(2);
+   }
+    65% {
+        transform: scale(2.1);
+   }
+    75% {
+        transform: scale(2);
+   }
+    90% {
+        transform: scale(1);
+   }
+    100% {
+        transform: scale(0);
+   }
+}
+@keyframes orbit2 {
+    0% {
+        transform: scale(0);
+   }
+    10% {
+        transform: scale(1);
+   }
+    25% {
+        transform: scale(2.2);
+   }
+    35% {
+        transform: scale(2.1);
+   }
+    50% {
+        transform: scale(2);
+   }
+    65% {
+        transform: scale(2.1);
+   }
+    75% {
+        transform: scale(2);
+   }
+    90% {
+        transform: scale(1);
+   }
+    100% {
+        transform: scale(0);
+   }
+}
+@keyframes orbit3 {
+    0% {
+        transform: scale(0);
+   }
+    10% {
+        transform: scale(1);
+   }
+    25% {
+        transform: scale(2.2);
+   }
+    35% {
+        transform: scale(2.1);
+   }
+    50% {
+        transform: scale(2);
+   }
+    65% {
+        transform: scale(2.1);
+   }
+    75% {
+        transform: scale(2);
+   }
+    90% {
+        transform: scale(1);
+   }
+    100% {
+        transform: scale(0);
+   }
+}
+@keyframes orbit4 {
+    0% {
+        transform: scale(0);
+   }
+    10% {
+        transform: scale(1);
+   }
+    25% {
+        transform: scale(2.2);
+   }
+    35% {
+        transform: scale(2.1);
+   }
+    50% {
+        transform: scale(2);
+   }
+    65% {
+        transform: scale(2.1);
+   }
+    75% {
+        transform: scale(2);
+   }
+    90% {
+        transform: scale(1);
+   }
+    100% {
+        transform: scale(0);
+   }
+}
+@keyframes color1 {
+    10% {
+        background: #c20114;
+   }
+    50% {
+
+        background-color: #000000;
+background-image: linear-gradient(315deg, #000000 0%, #b82e1f 74%);
+ 
+        /* #ff217b */
+   }
+    90% {
+        background: #c20114;
+   }
+}
+@keyframes color2 {
+    10% {
+        background: #c20114;
+   }
+    50% {
+        background-color: #ff4e00;
+        background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+
+        /* #ff7878 */
+   }
+    90% {
+        background: #c20114;
+   }
+}
+@keyframes color3 {
+    10% {
+        background: #c20114;
+   }
+    50% {
+        background-color: #20bf55;
+        background-image: linear-gradient(315deg, green 0%, #01baef 74%);
+        
+   }
+    90% {
+        background: #c20114;
+   }
+}
+@keyframes color4 {
+    10% {
+        background: #c20114;
+   }
+    70% {
+        background-color: #3f0d12;
+        background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+   }
+    90% {
+        background: #c20114;
+   }
+}
+@keyframes color5 {
+    10% {
+        background: linear-gradient(315deg, #ff4e00 0%, #c20114 74%);
+   }
+    70% {
+        /*** SUN */
+        background-color:  #c20114;
+   }
+    90% {
+        background: linear-gradient(315deg, #ff4e00 0%, #c20114 74%);
+   }
+}
+.game-loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+svg {
+    position: absolute;
+    z-index: -100;
+    pointer-events: none;
+}
+
+
+
+@keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  @-webkit-keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  @-moz-keyframes move-background {    
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+      @-webkit-keyframes move-background {
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  
